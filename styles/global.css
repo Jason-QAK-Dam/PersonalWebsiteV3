@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #29272A;
+}
+
+#logo {
+  font-family: 'Allan';
+  width: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  background-clip: border-box;
+  background: -webkit-linear-gradient(0deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 14px transparent;
+}
+
+.dropdown {
+  @apply absolute right-0 mt-3 w-full p-5 rounded-lg bg-black min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply md:text-2xl text-xl md:mx-5 mx-3 font-semibold cursor-pointer text-center sm:w-fit w-full text-white;
+}
